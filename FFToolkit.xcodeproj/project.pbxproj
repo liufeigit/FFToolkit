@@ -20,6 +20,7 @@
 		6816DE0717A137C600D0B70E /* FFLookupHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DDFF17A137C600D0B70E /* FFLookupHistoryViewController.m */; };
 		6816DE0817A137C600D0B70E /* FFSimpleArrayStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DE0117A137C600D0B70E /* FFSimpleArrayStore.m */; };
 		6816DE0917A137C600D0B70E /* FFSimpleKeyValueStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DE0317A137C600D0B70E /* FFSimpleKeyValueStore.m */; };
+		6816DE0D17A13A2300D0B70E /* NSString+FFRegexAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DE0C17A13A2300D0B70E /* NSString+FFRegexAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		6816DE0117A137C600D0B70E /* FFSimpleArrayStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSimpleArrayStore.m; sourceTree = "<group>"; };
 		6816DE0217A137C600D0B70E /* FFSimpleKeyValueStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFSimpleKeyValueStore.h; sourceTree = "<group>"; };
 		6816DE0317A137C600D0B70E /* FFSimpleKeyValueStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSimpleKeyValueStore.m; sourceTree = "<group>"; };
+		6816DE0B17A13A2300D0B70E /* NSString+FFRegexAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FFRegexAdditions.h"; sourceTree = "<group>"; };
+		6816DE0C17A13A2300D0B70E /* NSString+FFRegexAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FFRegexAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 				6816DE0117A137C600D0B70E /* FFSimpleArrayStore.m */,
 				6816DE0217A137C600D0B70E /* FFSimpleKeyValueStore.h */,
 				6816DE0317A137C600D0B70E /* FFSimpleKeyValueStore.m */,
+				6816DE0B17A13A2300D0B70E /* NSString+FFRegexAdditions.h */,
+				6816DE0C17A13A2300D0B70E /* NSString+FFRegexAdditions.m */,
 				6816DDD317A1375800D0B70E /* Supporting Files */,
 			);
 			path = FFToolkit;
@@ -280,6 +285,7 @@
 				6816DE0717A137C600D0B70E /* FFLookupHistoryViewController.m in Sources */,
 				6816DE0817A137C600D0B70E /* FFSimpleArrayStore.m in Sources */,
 				6816DE0917A137C600D0B70E /* FFSimpleKeyValueStore.m in Sources */,
+				6816DE0D17A13A2300D0B70E /* NSString+FFRegexAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +445,7 @@
 				6816DDF417A1375800D0B70E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6816DDF517A1375800D0B70E /* Build configuration list for PBXNativeTarget "FFToolkitTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +454,7 @@
 				6816DDF717A1375800D0B70E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
