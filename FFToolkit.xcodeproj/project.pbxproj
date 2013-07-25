@@ -8,14 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		6816DDD117A1375800D0B70E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6816DDD017A1375800D0B70E /* Foundation.framework */; };
-		6816DDD617A1375800D0B70E /* FFToolkit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6816DDD517A1375800D0B70E /* FFToolkit.h */; };
-		6816DDD817A1375800D0B70E /* FFToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DDD717A1375800D0B70E /* FFToolkit.m */; };
 		6816DDE017A1375800D0B70E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6816DDDF17A1375800D0B70E /* SenTestingKit.framework */; };
 		6816DDE217A1375800D0B70E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6816DDE117A1375800D0B70E /* UIKit.framework */; };
 		6816DDE317A1375800D0B70E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6816DDD017A1375800D0B70E /* Foundation.framework */; };
 		6816DDE617A1375800D0B70E /* libFFToolkit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6816DDCD17A1375800D0B70E /* libFFToolkit.a */; };
 		6816DDEC17A1375800D0B70E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6816DDEA17A1375800D0B70E /* InfoPlist.strings */; };
 		6816DDEF17A1375800D0B70E /* FFToolkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DDEE17A1375800D0B70E /* FFToolkitTests.m */; };
+		6816DE0417A137C600D0B70E /* FFFileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DDF917A137C600D0B70E /* FFFileUtils.m */; };
+		6816DE0517A137C600D0B70E /* FFListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DDFB17A137C600D0B70E /* FFListViewController.m */; };
+		6816DE0617A137C600D0B70E /* FFLookupHistoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DDFD17A137C600D0B70E /* FFLookupHistoryManager.m */; };
+		6816DE0717A137C600D0B70E /* FFLookupHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DDFF17A137C600D0B70E /* FFLookupHistoryViewController.m */; };
+		6816DE0817A137C600D0B70E /* FFSimpleArrayStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DE0117A137C600D0B70E /* FFSimpleArrayStore.m */; };
+		6816DE0917A137C600D0B70E /* FFSimpleKeyValueStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DE0317A137C600D0B70E /* FFSimpleKeyValueStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +39,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				6816DDD617A1375800D0B70E /* FFToolkit.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +48,6 @@
 		6816DDCD17A1375800D0B70E /* libFFToolkit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFFToolkit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6816DDD017A1375800D0B70E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6816DDD417A1375800D0B70E /* FFToolkit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FFToolkit-Prefix.pch"; sourceTree = "<group>"; };
-		6816DDD517A1375800D0B70E /* FFToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFToolkit.h; sourceTree = "<group>"; };
-		6816DDD717A1375800D0B70E /* FFToolkit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFToolkit.m; sourceTree = "<group>"; };
 		6816DDDE17A1375800D0B70E /* FFToolkitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFToolkitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6816DDDF17A1375800D0B70E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		6816DDE117A1375800D0B70E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -54,6 +55,18 @@
 		6816DDEB17A1375800D0B70E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6816DDED17A1375800D0B70E /* FFToolkitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFToolkitTests.h; sourceTree = "<group>"; };
 		6816DDEE17A1375800D0B70E /* FFToolkitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFToolkitTests.m; sourceTree = "<group>"; };
+		6816DDF817A137C600D0B70E /* FFFileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFileUtils.h; sourceTree = "<group>"; };
+		6816DDF917A137C600D0B70E /* FFFileUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFFileUtils.m; sourceTree = "<group>"; };
+		6816DDFA17A137C600D0B70E /* FFListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFListViewController.h; sourceTree = "<group>"; };
+		6816DDFB17A137C600D0B70E /* FFListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFListViewController.m; sourceTree = "<group>"; };
+		6816DDFC17A137C600D0B70E /* FFLookupHistoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFLookupHistoryManager.h; sourceTree = "<group>"; };
+		6816DDFD17A137C600D0B70E /* FFLookupHistoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFLookupHistoryManager.m; sourceTree = "<group>"; };
+		6816DDFE17A137C600D0B70E /* FFLookupHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFLookupHistoryViewController.h; sourceTree = "<group>"; };
+		6816DDFF17A137C600D0B70E /* FFLookupHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFLookupHistoryViewController.m; sourceTree = "<group>"; };
+		6816DE0017A137C600D0B70E /* FFSimpleArrayStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFSimpleArrayStore.h; sourceTree = "<group>"; };
+		6816DE0117A137C600D0B70E /* FFSimpleArrayStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSimpleArrayStore.m; sourceTree = "<group>"; };
+		6816DE0217A137C600D0B70E /* FFSimpleKeyValueStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFSimpleKeyValueStore.h; sourceTree = "<group>"; };
+		6816DE0317A137C600D0B70E /* FFSimpleKeyValueStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSimpleKeyValueStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +124,15 @@
 		6816DDD217A1375800D0B70E /* FFToolkit */ = {
 			isa = PBXGroup;
 			children = (
-				6816DDD517A1375800D0B70E /* FFToolkit.h */,
-				6816DDD717A1375800D0B70E /* FFToolkit.m */,
+				6816DE0A17A137D400D0B70E /* Controllers */,
+				6816DDF817A137C600D0B70E /* FFFileUtils.h */,
+				6816DDF917A137C600D0B70E /* FFFileUtils.m */,
+				6816DDFC17A137C600D0B70E /* FFLookupHistoryManager.h */,
+				6816DDFD17A137C600D0B70E /* FFLookupHistoryManager.m */,
+				6816DE0017A137C600D0B70E /* FFSimpleArrayStore.h */,
+				6816DE0117A137C600D0B70E /* FFSimpleArrayStore.m */,
+				6816DE0217A137C600D0B70E /* FFSimpleKeyValueStore.h */,
+				6816DE0317A137C600D0B70E /* FFSimpleKeyValueStore.m */,
 				6816DDD317A1375800D0B70E /* Supporting Files */,
 			);
 			path = FFToolkit;
@@ -143,6 +163,17 @@
 				6816DDEA17A1375800D0B70E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6816DE0A17A137D400D0B70E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6816DDFA17A137C600D0B70E /* FFListViewController.h */,
+				6816DDFB17A137C600D0B70E /* FFListViewController.m */,
+				6816DDFE17A137C600D0B70E /* FFLookupHistoryViewController.h */,
+				6816DDFF17A137C600D0B70E /* FFLookupHistoryViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,7 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6816DDD817A1375800D0B70E /* FFToolkit.m in Sources */,
+				6816DE0417A137C600D0B70E /* FFFileUtils.m in Sources */,
+				6816DE0517A137C600D0B70E /* FFListViewController.m in Sources */,
+				6816DE0617A137C600D0B70E /* FFLookupHistoryManager.m in Sources */,
+				6816DE0717A137C600D0B70E /* FFLookupHistoryViewController.m in Sources */,
+				6816DE0817A137C600D0B70E /* FFSimpleArrayStore.m in Sources */,
+				6816DE0917A137C600D0B70E /* FFSimpleKeyValueStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
