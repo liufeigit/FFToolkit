@@ -21,6 +21,11 @@
 		6816DE0817A137C600D0B70E /* FFSimpleArrayStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DE0117A137C600D0B70E /* FFSimpleArrayStore.m */; };
 		6816DE0917A137C600D0B70E /* FFSimpleKeyValueStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DE0317A137C600D0B70E /* FFSimpleKeyValueStore.m */; };
 		6816DE0D17A13A2300D0B70E /* NSString+FFRegexAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DE0C17A13A2300D0B70E /* NSString+FFRegexAdditions.m */; };
+		6816DE1817A13BAA00D0B70E /* FFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DE0F17A13BAA00D0B70E /* FFButton.m */; };
+		6816DE1917A13BAA00D0B70E /* FFLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DE1117A13BAA00D0B70E /* FFLabel.m */; };
+		6816DE1A17A13BAA00D0B70E /* FFLabeledButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DE1317A13BAA00D0B70E /* FFLabeledButton.m */; };
+		6816DE1B17A13BAA00D0B70E /* NSArray+FFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DE1517A13BAA00D0B70E /* NSArray+FFAdditions.m */; };
+		6816DE1C17A13BAA00D0B70E /* NSMutableArray+FFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DE1717A13BAA00D0B70E /* NSMutableArray+FFAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +75,16 @@
 		6816DE0317A137C600D0B70E /* FFSimpleKeyValueStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSimpleKeyValueStore.m; sourceTree = "<group>"; };
 		6816DE0B17A13A2300D0B70E /* NSString+FFRegexAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FFRegexAdditions.h"; sourceTree = "<group>"; };
 		6816DE0C17A13A2300D0B70E /* NSString+FFRegexAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FFRegexAdditions.m"; sourceTree = "<group>"; };
+		6816DE0E17A13BAA00D0B70E /* FFButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFButton.h; sourceTree = "<group>"; };
+		6816DE0F17A13BAA00D0B70E /* FFButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFButton.m; sourceTree = "<group>"; };
+		6816DE1017A13BAA00D0B70E /* FFLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFLabel.h; sourceTree = "<group>"; };
+		6816DE1117A13BAA00D0B70E /* FFLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFLabel.m; sourceTree = "<group>"; };
+		6816DE1217A13BAA00D0B70E /* FFLabeledButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFLabeledButton.h; sourceTree = "<group>"; };
+		6816DE1317A13BAA00D0B70E /* FFLabeledButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFLabeledButton.m; sourceTree = "<group>"; };
+		6816DE1417A13BAA00D0B70E /* NSArray+FFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+FFAdditions.h"; sourceTree = "<group>"; };
+		6816DE1517A13BAA00D0B70E /* NSArray+FFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FFAdditions.m"; sourceTree = "<group>"; };
+		6816DE1617A13BAA00D0B70E /* NSMutableArray+FFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+FFAdditions.h"; sourceTree = "<group>"; };
+		6816DE1717A13BAA00D0B70E /* NSMutableArray+FFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+FFAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +142,9 @@
 		6816DDD217A1375800D0B70E /* FFToolkit */ = {
 			isa = PBXGroup;
 			children = (
+				6816DE1E17A13BCB00D0B70E /* CoreExtensions */,
 				6816DE0A17A137D400D0B70E /* Controllers */,
+				6816DE1D17A13BB100D0B70E /* Views */,
 				6816DDF817A137C600D0B70E /* FFFileUtils.h */,
 				6816DDF917A137C600D0B70E /* FFFileUtils.m */,
 				6816DDFC17A137C600D0B70E /* FFLookupHistoryManager.h */,
@@ -136,8 +153,6 @@
 				6816DE0117A137C600D0B70E /* FFSimpleArrayStore.m */,
 				6816DE0217A137C600D0B70E /* FFSimpleKeyValueStore.h */,
 				6816DE0317A137C600D0B70E /* FFSimpleKeyValueStore.m */,
-				6816DE0B17A13A2300D0B70E /* NSString+FFRegexAdditions.h */,
-				6816DE0C17A13A2300D0B70E /* NSString+FFRegexAdditions.m */,
 				6816DDD317A1375800D0B70E /* Supporting Files */,
 			);
 			path = FFToolkit;
@@ -179,6 +194,32 @@
 				6816DDFF17A137C600D0B70E /* FFLookupHistoryViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6816DE1D17A13BB100D0B70E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6816DE0E17A13BAA00D0B70E /* FFButton.h */,
+				6816DE0F17A13BAA00D0B70E /* FFButton.m */,
+				6816DE1017A13BAA00D0B70E /* FFLabel.h */,
+				6816DE1117A13BAA00D0B70E /* FFLabel.m */,
+				6816DE1217A13BAA00D0B70E /* FFLabeledButton.h */,
+				6816DE1317A13BAA00D0B70E /* FFLabeledButton.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6816DE1E17A13BCB00D0B70E /* CoreExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				6816DE0B17A13A2300D0B70E /* NSString+FFRegexAdditions.h */,
+				6816DE0C17A13A2300D0B70E /* NSString+FFRegexAdditions.m */,
+				6816DE1417A13BAA00D0B70E /* NSArray+FFAdditions.h */,
+				6816DE1517A13BAA00D0B70E /* NSArray+FFAdditions.m */,
+				6816DE1617A13BAA00D0B70E /* NSMutableArray+FFAdditions.h */,
+				6816DE1717A13BAA00D0B70E /* NSMutableArray+FFAdditions.m */,
+			);
+			name = CoreExtensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +327,11 @@
 				6816DE0817A137C600D0B70E /* FFSimpleArrayStore.m in Sources */,
 				6816DE0917A137C600D0B70E /* FFSimpleKeyValueStore.m in Sources */,
 				6816DE0D17A13A2300D0B70E /* NSString+FFRegexAdditions.m in Sources */,
+				6816DE1817A13BAA00D0B70E /* FFButton.m in Sources */,
+				6816DE1917A13BAA00D0B70E /* FFLabel.m in Sources */,
+				6816DE1A17A13BAA00D0B70E /* FFLabeledButton.m in Sources */,
+				6816DE1B17A13BAA00D0B70E /* NSArray+FFAdditions.m in Sources */,
+				6816DE1C17A13BAA00D0B70E /* NSMutableArray+FFAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

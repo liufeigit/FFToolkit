@@ -10,8 +10,10 @@
 
 @interface NSString (FFRegexAdditions)
 
+
 - (NSString *)stringByMatchingRegexPattern:(NSString *)patternString;
 
 - (BOOL)matchesRegexPattern:(NSString *)patternString;
+
 
 @end
