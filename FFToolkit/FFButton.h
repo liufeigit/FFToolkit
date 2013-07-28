@@ -11,11 +11,13 @@
 
 @class FFButton;
 
+
 @protocol FFButtonDelegate <NSObject>
 
 - (void)didPressedButton:(FFButton *)button;
 
 @end
+
 
 
 @interface FFButton : UIView
