@@ -7,7 +7,7 @@
 //
 
 #import "FFSolidColorTableHeaderView.h"
-#import "RDPViewDefinitions.h"
+
 
 @implementation FFSolidColorTableHeaderView
 
