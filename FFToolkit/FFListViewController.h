@@ -11,6 +11,11 @@
 @interface FFListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 
+// Designated Initializer
+// TODO: override initWithFrame and call [self init]?
+- (instancetype)init;
+
+
 @property (nonatomic) UITableView *tableView;
 
 @property Class cellClass;
