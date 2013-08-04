@@ -20,7 +20,7 @@
 # pragma mark - private
 
 
-// reuse globally, flyweight pattern?
+// reuse globally
 + (instancetype)sharedInstanceWithText:(NSString *)text {
   static NSMutableDictionary* _instances = nil;
 
