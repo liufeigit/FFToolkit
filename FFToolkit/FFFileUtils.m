@@ -8,6 +8,7 @@
 
 #import "FFFileUtils.h"
 
+
 @implementation FFFileUtils
 
 
@@ -117,6 +118,13 @@
   }
 
   return nil;
+}
+
+
++ (BOOL)cachedFileExist:(NSString *)cachedDataName {
+  NSString *path = [self cacheFilePathForName:cachedDataName];
+
+  return [[NSFileManager defaultManager] fileExistsAtPath:path];
 }
 
 

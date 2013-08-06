@@ -43,5 +43,7 @@
 
 + (NSString *)contentOfCachedFileWithName:(NSString *)cachedDataName;
 
++ (BOOL)cachedFileExist:(NSString *)cachedDataName;
+
 
 @end
