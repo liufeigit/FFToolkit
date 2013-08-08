@@ -17,6 +17,7 @@
 
 + (instancetype)sharedDelegate;
 
+// change root view controller with animation, while taking care of interface orientation
 - (void)changeRootViewControllerToViewController:(UIViewController *)newRootViewController;
 
 
