@@ -27,6 +27,7 @@
 		6816DE1B17A13BAA00D0B70E /* NSArray+FFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DE1517A13BAA00D0B70E /* NSArray+FFAdditions.m */; };
 		6816DE1C17A13BAA00D0B70E /* NSMutableArray+FFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DE1717A13BAA00D0B70E /* NSMutableArray+FFAdditions.m */; };
 		6816DE2117A13E3100D0B70E /* FFSolidColorTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DE2017A13E3100D0B70E /* FFSolidColorTableHeaderView.m */; };
+		6840388E17B3EADC007AADD3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6840388D17B3EADC007AADD3 /* CoreGraphics.framework */; };
 		68A4860717B38727002D83E2 /* FFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A4860617B38727002D83E2 /* FFAppDelegate.m */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,8 @@
 		6816DE1717A13BAA00D0B70E /* NSMutableArray+FFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+FFAdditions.m"; sourceTree = "<group>"; };
 		6816DE1F17A13E3100D0B70E /* FFSolidColorTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFSolidColorTableHeaderView.h; sourceTree = "<group>"; };
 		6816DE2017A13E3100D0B70E /* FFSolidColorTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSolidColorTableHeaderView.m; sourceTree = "<group>"; };
+		6840388A17B3EA75007AADD3 /* CGGeometry+FFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGGeometry+FFAdditions.h"; sourceTree = "<group>"; };
+		6840388D17B3EADC007AADD3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6842BAFB17B09CAC00E2AB30 /* FFAssertions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFAssertions.h; sourceTree = "<group>"; };
 		68A4860517B38727002D83E2 /* FFAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFAppDelegate.h; sourceTree = "<group>"; };
 		68A4860617B38727002D83E2 /* FFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFAppDelegate.m; sourceTree = "<group>"; };
@@ -99,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6840388E17B3EADC007AADD3 /* CoreGraphics.framework in Frameworks */,
 				6816DDD117A1375800D0B70E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +143,7 @@
 		6816DDCF17A1375800D0B70E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6840388D17B3EADC007AADD3 /* CoreGraphics.framework */,
 				6816DDD017A1375800D0B70E /* Foundation.framework */,
 				6816DDDF17A1375800D0B70E /* SenTestingKit.framework */,
 				6816DDE117A1375800D0B70E /* UIKit.framework */,
@@ -230,6 +235,7 @@
 				6816DE1517A13BAA00D0B70E /* NSArray+FFAdditions.m */,
 				6816DE1617A13BAA00D0B70E /* NSMutableArray+FFAdditions.h */,
 				6816DE1717A13BAA00D0B70E /* NSMutableArray+FFAdditions.m */,
+				6840388A17B3EA75007AADD3 /* CGGeometry+FFAdditions.h */,
 			);
 			name = CoreExtensions;
 			sourceTree = "<group>";
