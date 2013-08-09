@@ -8,10 +8,11 @@
 
 #import "FFADBannerViewDelegate.h"
 
+#import "CGGeometry+FFAdditions.h"
+
 
 @interface FFADBannerViewDelegate ()
 
-@property (nonatomic) ADBannerView *adBannerView;
 @property (nonatomic) BOOL adBannerViewVisible;
 @property (nonatomic) UIScrollView *scrollView;
 
@@ -47,10 +48,12 @@
 
   if (!self.adBannerViewVisible) {
     [UIView animateWithDuration:0.7 animations:^{
-      banner.frame = CGRectOffset(banner.frame, 0, -banner.frame.size.height);
+      banner.center = CGPointOffset(banner.center, 0, -CGRectGetHeight(banner.frame));
 
-      self.scrollView.contentInset = UIEdgeInsetsMake(self.scrollView.contentInset.top, 0, CGRectGetHeight(banner.frame), 0);
-      self.scrollView.scrollIndicatorInsets = UIEdgeInsetsMake(self.scrollView.contentInset.top, 0, CGRectGetHeight(banner.frame), 0);
+      UIEdgeInsets newEdgeInsets = UIEdgeInsetsMake(self.scrollView.contentInset.top, 0, CGRectGetHeight(banner.frame), 0);
+
+      self.scrollView.contentInset = newEdgeInsets;
+      self.scrollView.scrollIndicatorInsets = newEdgeInsets;
     }];
 
     self.adBannerViewVisible = YES;
@@ -63,10 +66,12 @@
 
   if (self.adBannerViewVisible) {
     [UIView animateWithDuration:0.7 animations:^{
-      banner.frame = CGRectOffset(banner.frame, 0, banner.frame.size.height);
+      banner.center = CGPointOffset(banner.center, 0, CGRectGetHeight(banner.frame));
 
-      self.scrollView.contentInset = UIEdgeInsetsMake(self.scrollView.contentInset.top, 0, 0, 0);
-      self.scrollView.scrollIndicatorInsets = UIEdgeInsetsMake(self.scrollView.contentInset.top, 0, 0, 0);
+      UIEdgeInsets newEdgeInsets = UIEdgeInsetsMake(self.scrollView.contentInset.top, 0, 0, 0);
+
+      self.scrollView.contentInset = newEdgeInsets;
+      self.scrollView.scrollIndicatorInsets = newEdgeInsets;
     }];
 
     self.adBannerViewVisible = NO;

@@ -14,6 +14,8 @@
 @interface FFADBannerViewDelegate : NSObject <ADBannerViewDelegate>
 
 
+@property (nonatomic) ADBannerView *adBannerView;
+
 - (instancetype)initWithScrollView:(UIScrollView *)scrollView;
 
 
