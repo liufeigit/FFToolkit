@@ -30,6 +30,7 @@
 		6840388E17B3EADC007AADD3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6840388D17B3EADC007AADD3 /* CoreGraphics.framework */; };
 		68A4860717B38727002D83E2 /* FFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A4860617B38727002D83E2 /* FFAppDelegate.m */; };
 		68C9E07B17B4AA9300EA1FAA /* FFADBannerViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C9E07A17B4AA9300EA1FAA /* FFADBannerViewDelegate.m */; };
+		68C9E07F17B4B8BF00EA1FAA /* FFArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C9E07E17B4B8BF00EA1FAA /* FFArrayDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,8 @@
 		68A4860617B38727002D83E2 /* FFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFAppDelegate.m; sourceTree = "<group>"; };
 		68C9E07917B4AA9300EA1FAA /* FFADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFADBannerViewDelegate.h; sourceTree = "<group>"; };
 		68C9E07A17B4AA9300EA1FAA /* FFADBannerViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFADBannerViewDelegate.m; sourceTree = "<group>"; };
+		68C9E07D17B4B8BF00EA1FAA /* FFArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFArrayDataSource.h; sourceTree = "<group>"; };
+		68C9E07E17B4B8BF00EA1FAA /* FFArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFArrayDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +177,8 @@
 				68A4860517B38727002D83E2 /* FFAppDelegate.h */,
 				68A4860617B38727002D83E2 /* FFAppDelegate.m */,
 				6816DDD317A1375800D0B70E /* Supporting Files */,
+				68C9E07D17B4B8BF00EA1FAA /* FFArrayDataSource.h */,
+				68C9E07E17B4B8BF00EA1FAA /* FFArrayDataSource.m */,
 			);
 			path = FFToolkit;
 			sourceTree = "<group>";
@@ -358,6 +363,7 @@
 				6816DE2117A13E3100D0B70E /* FFSolidColorTableHeaderView.m in Sources */,
 				68A4860717B38727002D83E2 /* FFAppDelegate.m in Sources */,
 				68C9E07B17B4AA9300EA1FAA /* FFADBannerViewDelegate.m in Sources */,
+				68C9E07F17B4B8BF00EA1FAA /* FFArrayDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
