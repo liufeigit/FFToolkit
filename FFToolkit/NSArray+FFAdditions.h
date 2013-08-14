@@ -8,8 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface NSArray (FFAdditions)
 
+
 - (id)sample;
+
+// does not guarantee order
+- (NSArray *)uniq;
+
 
 @end

@@ -8,10 +8,20 @@
 
 #import "NSArray+FFAdditions.h"
 
+#import "NSMutableArray+FFAdditions.h"
+
+
 @implementation NSArray (FFAdditions)
+
 
 - (id)sample {
   return self[arc4random() % self.count];
 }
+
+
+- (NSArray *)uniq {
+  return [[NSSet setWithArray:self] allObjects];
+}
+
 
 @end
