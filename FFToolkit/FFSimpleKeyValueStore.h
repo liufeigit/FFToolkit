@@ -36,6 +36,11 @@
 // NSUInteger
 - (void)storeNSUIntegerValue:(NSUInteger)intValue forKey:(NSString *)key;
 
+- (void)increaseNSUIntegerValueForKey:(NSString *)key;
+
 - (NSUInteger)getNSUIntegerValueWithKey:(NSString *)key;
+
+- (NSUInteger)getNSUIntegerValueWithKey:(NSString *)key defaultValue:(NSUInteger)defaultValue;
+
 
 @end

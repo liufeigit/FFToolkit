@@ -96,8 +96,19 @@
 }
 
 
+- (void)increaseNSUIntegerValueForKey:(NSString *)key {
+  NSUInteger oldValue = [self getNSUIntegerValueWithKey:key defaultValue:0];
+  [self storeNSUIntegerValue:oldValue + 1 forKey:key];
+}
+
+
 - (NSUInteger)getNSUIntegerValueWithKey:(NSString *)key {
   return [[self getValueWithKey:key] intValue];
+}
+
+
+- (NSUInteger)getNSUIntegerValueWithKey:(NSString *)key defaultValue:(NSUInteger)defaultValue {
+  return [[self getValueWithKey:key defaultValue:@(defaultValue) storeDefaultValueIfNotPresent:NO] intValue];
 }
 
 
