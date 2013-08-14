@@ -23,7 +23,11 @@
 }
 
 
-- (void)storeValue:(id)value forKey:(id)key {
+# pragma mark
+# pragma mark - general access methods
+
+
+- (void)storeValue:(id)value forKey:(NSString *)key {
   NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 
   [defaults setValue:value forKey:key];
@@ -33,19 +37,19 @@
 }
 
 
-- (id)getValueWithKey:(id)key {
+- (id)getValueWithKey:(NSString *)key {
   NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 
   return [defaults valueForKey:key];
 }
 
 
-- (id)getValueWithKey:(id)key defaultValue:(id)defaultValue {
+- (id)getValueWithKey:(NSString *)key defaultValue:(id)defaultValue {
   return [self getValueWithKey:key defaultValue:defaultValue storeDefaultValueIfNotPresent:NO];
 }
 
 
-- (id)getValueWithKey:(id)key defaultValue:(id)defaultValue storeDefaultValueIfNotPresent:(BOOL)storeDefault {
+- (id)getValueWithKey:(NSString *)key defaultValue:(id)defaultValue storeDefaultValueIfNotPresent:(BOOL)storeDefault {
   NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 
   id value = [defaults valueForKey:key];
@@ -61,6 +65,39 @@
   }
 
   return value;
+}
+
+
+# pragma mark
+# pragma mark - BOOL
+
+
+- (void)storeBOOLValue:(BOOL)boolValue forKey:(NSString *)key {
+  [self storeValue:@(boolValue) forKey:key];
+}
+
+
+- (BOOL)getBOOLValueWithKey:(NSString *)key {
+  return [[self getValueWithKey:key] boolValue];
+}
+
+
+- (BOOL)getBOOLValueWithKey:(NSString *)key defaultValue:(BOOL)defaultValue {
+  return [[self getValueWithKey:key defaultValue:@(defaultValue) storeDefaultValueIfNotPresent:NO] boolValue];
+}
+
+
+# pragma mark
+# pragma mark - NSUInteger
+
+
+- (void)storeNSUIntegerValue:(NSUInteger)intValue forKey:(NSString *)key {
+  [self storeValue:@(intValue) forKey:key];
+}
+
+
+- (NSUInteger)getNSUIntegerValueWithKey:(NSString *)key {
+  return [[self getValueWithKey:key] intValue];
 }
 
 
