@@ -14,6 +14,8 @@
 
 - (id)sample;
 
+- (NSArray *)sample:(NSUInteger)count;
+
 // does not guarantee order
 - (NSArray *)uniq;
 

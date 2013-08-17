@@ -19,6 +19,16 @@
 }
 
 
+- (NSArray *)sample:(NSUInteger)count {
+  NSParameterAssert(self.count >= count);
+
+  NSMutableArray *mutableArray = [NSMutableArray arrayWithArray:self];
+  [mutableArray shuffle];
+
+  return [mutableArray subarrayWithRange:NSMakeRange(0, count)];
+}
+
+
 - (NSArray *)uniq {
   return [[NSSet setWithArray:self] allObjects];
 }
