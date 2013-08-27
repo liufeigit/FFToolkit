@@ -18,6 +18,10 @@
 
 
 - (void)changeRootViewControllerToViewController:(UIViewController *)newRootViewController {
+  if (newRootViewController == self.window.rootViewController) {
+    return;
+  }
+
   UIView *oldRootViewControllerView = self.window.rootViewController.view;
 
   newRootViewController.view.transform = oldRootViewControllerView.transform;
