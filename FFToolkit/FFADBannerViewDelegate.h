@@ -18,5 +18,6 @@
 
 - (instancetype)initWithScrollView:(UIScrollView *)scrollView;
 
+- (instancetype)initWithContainerView:(UIView *)containerView;
 
 @end
