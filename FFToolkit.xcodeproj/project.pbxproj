@@ -28,10 +28,11 @@
 		6840388E17B3EADC007AADD3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6840388D17B3EADC007AADD3 /* CoreGraphics.framework */; };
 		6842989517D9BC5A00907AE1 /* FFStopWatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6842989417D9BC5A00907AE1 /* FFStopWatchTests.m */; };
 		6842989A17D9BCA100907AE1 /* FFGameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6842989717D9BCA100907AE1 /* FFGameCenterManager.m */; };
-		6842989B17D9BCA100907AE1 /* FFStopWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6842989917D9BCA100907AE1 /* FFStopWatch.m */; };
 		6842989D17D9BD5100907AE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6842989C17D9BD5100907AE1 /* UIKit.framework */; };
 		6842989E17D9BD6D00907AE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6842989C17D9BD5100907AE1 /* UIKit.framework */; };
 		684298A017D9BDB600907AE1 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6842989F17D9BDB600907AE1 /* GameKit.framework */; };
+		684298A217D9C04400907AE1 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684298A117D9C04400907AE1 /* iAd.framework */; };
+		684298A617D9C2CD00907AE1 /* FFStopWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 684298A517D9C2CD00907AE1 /* FFStopWatch.m */; };
 		68A4860717B38727002D83E2 /* FFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A4860617B38727002D83E2 /* FFAppDelegate.m */; };
 		68C9E07B17B4AA9300EA1FAA /* FFADBannerViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C9E07A17B4AA9300EA1FAA /* FFADBannerViewDelegate.m */; };
 		68C9E07F17B4B8BF00EA1FAA /* FFArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C9E07E17B4B8BF00EA1FAA /* FFArrayDataSource.m */; };
@@ -99,10 +100,11 @@
 		6842989417D9BC5A00907AE1 /* FFStopWatchTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFStopWatchTests.m; sourceTree = "<group>"; };
 		6842989617D9BCA100907AE1 /* FFGameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFGameCenterManager.h; sourceTree = "<group>"; };
 		6842989717D9BCA100907AE1 /* FFGameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFGameCenterManager.m; sourceTree = "<group>"; };
-		6842989817D9BCA100907AE1 /* FFStopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFStopWatch.h; sourceTree = "<group>"; };
-		6842989917D9BCA100907AE1 /* FFStopWatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFStopWatch.m; sourceTree = "<group>"; };
 		6842989C17D9BD5100907AE1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6842989F17D9BDB600907AE1 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		684298A117D9C04400907AE1 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		684298A417D9C2CD00907AE1 /* FFStopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFStopWatch.h; sourceTree = "<group>"; };
+		684298A517D9C2CD00907AE1 /* FFStopWatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFStopWatch.m; sourceTree = "<group>"; };
 		6842BAFB17B09CAC00E2AB30 /* FFAssertions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFAssertions.h; sourceTree = "<group>"; };
 		68A4860517B38727002D83E2 /* FFAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFAppDelegate.h; sourceTree = "<group>"; };
 		68A4860617B38727002D83E2 /* FFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFAppDelegate.m; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				684298A217D9C04400907AE1 /* iAd.framework in Frameworks */,
 				6842989D17D9BD5100907AE1 /* UIKit.framework in Frameworks */,
 				6840388E17B3EADC007AADD3 /* CoreGraphics.framework in Frameworks */,
 				6816DDD117A1375800D0B70E /* Foundation.framework in Frameworks */,
@@ -160,6 +163,7 @@
 		6816DDCF17A1375800D0B70E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				684298A117D9C04400907AE1 /* iAd.framework */,
 				6842989F17D9BDB600907AE1 /* GameKit.framework */,
 				6842989C17D9BD5100907AE1 /* UIKit.framework */,
 				6840388D17B3EADC007AADD3 /* CoreGraphics.framework */,
@@ -172,6 +176,7 @@
 		6816DDD217A1375800D0B70E /* FFToolkit */ = {
 			isa = PBXGroup;
 			children = (
+				684298A317D9C2CD00907AE1 /* Shared */,
 				6816DE1E17A13BCB00D0B70E /* CoreExtensions */,
 				6816DE0A17A137D400D0B70E /* Controllers */,
 				6816DE1D17A13BB100D0B70E /* Views */,
@@ -192,8 +197,6 @@
 				68C9E07E17B4B8BF00EA1FAA /* FFArrayDataSource.m */,
 				6842989617D9BCA100907AE1 /* FFGameCenterManager.h */,
 				6842989717D9BCA100907AE1 /* FFGameCenterManager.m */,
-				6842989817D9BCA100907AE1 /* FFStopWatch.h */,
-				6842989917D9BCA100907AE1 /* FFStopWatch.m */,
 				6816DDD317A1375800D0B70E /* Supporting Files */,
 			);
 			path = FFToolkit;
@@ -264,6 +267,15 @@
 				6840388A17B3EA75007AADD3 /* CGGeometry+FFAdditions.h */,
 			);
 			name = CoreExtensions;
+			sourceTree = "<group>";
+		};
+		684298A317D9C2CD00907AE1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				684298A417D9C2CD00907AE1 /* FFStopWatch.h */,
+				684298A517D9C2CD00907AE1 /* FFStopWatch.m */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,6 +392,7 @@
 				68A4860717B38727002D83E2 /* FFAppDelegate.m in Sources */,
 				68C9E07B17B4AA9300EA1FAA /* FFADBannerViewDelegate.m in Sources */,
 				68C9E07F17B4B8BF00EA1FAA /* FFArrayDataSource.m in Sources */,
+				684298A617D9C2CD00907AE1 /* FFStopWatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,7 +402,6 @@
 			files = (
 				6842989517D9BC5A00907AE1 /* FFStopWatchTests.m in Sources */,
 				6842989A17D9BCA100907AE1 /* FFGameCenterManager.m in Sources */,
-				6842989B17D9BCA100907AE1 /* FFStopWatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
