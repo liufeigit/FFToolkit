@@ -176,9 +176,9 @@
 				6816DE0317A137C600D0B70E /* FFSimpleKeyValueStore.m */,
 				68A4860517B38727002D83E2 /* FFAppDelegate.h */,
 				68A4860617B38727002D83E2 /* FFAppDelegate.m */,
-				6816DDD317A1375800D0B70E /* Supporting Files */,
 				68C9E07D17B4B8BF00EA1FAA /* FFArrayDataSource.h */,
 				68C9E07E17B4B8BF00EA1FAA /* FFArrayDataSource.m */,
+				6816DDD317A1375800D0B70E /* Supporting Files */,
 			);
 			path = FFToolkit;
 			sourceTree = "<group>";
