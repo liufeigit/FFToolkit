@@ -11,10 +11,14 @@
 // frameworks
 #import <GameKit/GameKit.h>
 
+// FFToolkit
+#import "FFSimpleKeyValueStore.h"
+
 
 @interface FFGameCenterManager ()
 
 @property (nonatomic) BOOL gameCenterEnabled;
+@property (nonatomic) FFSimpleKeyValueStore *keyValueStore;
 
 @end
 
@@ -42,6 +46,7 @@
 
   if (self) {
     [self setupGameCenter];
+    self.keyValueStore = [FFSimpleKeyValueStore defaultStore];
   }
 
   return self;
@@ -94,20 +99,56 @@
 }
 
 - (void)reportAchievementWithIdentifier:(NSString *)identifier percentComplete:(double)percent {
-  if (self.gameCenterEnabled) {
-    GKAchievement *achievement = [[GKAchievement alloc] initWithIdentifier:identifier];
+  percent = MIN(percent, 100);
 
-    if (achievement) {
-      achievement.percentComplete = percent;
-      [achievement reportAchievementWithCompletionHandler:^(NSError *error) {
-        if (error != nil) {
-          NSLog(@"Error in reporting achievements: %@", error.debugDescription);
-        } else {
-          NSLog(@"achievement reported: %@", achievement);
+  if (percent >= 100) {
+    NSString *achievementCompletedKey = [NSString stringWithFormat:@"achievementCompleted.%@", identifier];
+
+    if ([self.keyValueStore getBOOLValueWithKey:achievementCompletedKey defaultValue:NO]) {
+      NSLog(@"achievement already completed previously!");
+    } else {
+      if (self.gameCenterEnabled) {
+        GKAchievement *achievement = [[GKAchievement alloc] initWithIdentifier:identifier];
+
+        if (achievement) {
+          if (achievement.completed) {
+            NSLog(@"achievement already completed");
+          } else {
+            achievement.showsCompletionBanner = YES;
+
+            achievement.percentComplete = percent;
+
+            [achievement reportAchievementWithCompletionHandler:^(NSError *error) {
+              if (error != nil) {
+                NSLog(@"Error in reporting achievements: %@", error.debugDescription);
+              } else {
+                NSLog(@"achievement reported: %@", achievement);
+
+                if (percent >= 100) {
+                  [self.keyValueStore storeBOOLValue:YES forKey:achievementCompletedKey];
+                }
+              }
+            }];
+          }
         }
-      }];
+      }
     }
   }
+}
+
+
+# pragma mark - reset achievements
+
+
+- (void)resetAchievements {
+  // Clear all progress saved on Game Center.
+  [GKAchievement resetAchievementsWithCompletionHandler:^(NSError *error) {
+    if (error != nil) {
+      NSLog(@"error while resetting achievements, %@", error.debugDescription);
+    } else {
+      NSLog(@"game center achievements reset completed");
+    }
+  }];
 }
 
 

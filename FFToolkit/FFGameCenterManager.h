@@ -21,4 +21,6 @@
 
 - (void)reportAchievementWithIdentifier:(NSString *)identifier percentComplete:(double)percent;
 
+- (void)resetAchievements;
+
 @end
