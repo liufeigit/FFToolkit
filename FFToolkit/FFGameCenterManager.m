@@ -101,37 +101,38 @@
 - (void)reportAchievementWithIdentifier:(NSString *)identifier percentComplete:(double)percent {
   percent = MIN(percent, 100);
 
-  if (percent >= 100) {
-    NSString *achievementCompletedKey = [NSString stringWithFormat:@"achievementCompleted.%@", identifier];
+  NSString *achievementCompletedKey = [NSString stringWithFormat:@"achievementCompleted.%@", identifier];
 
-    if ([self.keyValueStore getBOOLValueWithKey:achievementCompletedKey defaultValue:NO]) {
-      NSLog(@"achievement already completed previously!");
-    } else {
-      if (self.gameCenterEnabled) {
-        GKAchievement *achievement = [[GKAchievement alloc] initWithIdentifier:identifier];
+  if ([self.keyValueStore getBOOLValueWithKey:achievementCompletedKey defaultValue:NO]) {
+    NSLog(@"According to local cache, achievement has already been accomplished previously!");
+    return;
+  }
 
-        if (achievement) {
-          if (achievement.completed) {
-            NSLog(@"achievement already completed");
-          } else {
-            achievement.showsCompletionBanner = YES;
+  if (self.gameCenterEnabled) {
+    GKAchievement *achievement = [[GKAchievement alloc] initWithIdentifier:identifier];
 
-            achievement.percentComplete = percent;
+    if (achievement) {
+      if (achievement.completed) {
+        // TODO: this seems never reached. should investigate
+        NSLog(@"achievement already completed");
+        return;
+      }
 
-            [achievement reportAchievementWithCompletionHandler:^(NSError *error) {
-              if (error != nil) {
-                NSLog(@"Error in reporting achievements: %@", error.debugDescription);
-              } else {
-                NSLog(@"achievement reported: %@", achievement);
+      achievement.showsCompletionBanner = YES;
 
-                if (percent >= 100) {
-                  [self.keyValueStore storeBOOLValue:YES forKey:achievementCompletedKey];
-                }
-              }
-            }];
+      achievement.percentComplete = percent;
+
+      [achievement reportAchievementWithCompletionHandler:^(NSError *error) {
+        if (error != nil) {
+          NSLog(@"Error in reporting achievements: %@", error.debugDescription);
+        } else {
+          NSLog(@"achievement reported: %@", achievement);
+
+          if (percent >= 100) {
+            [self.keyValueStore storeBOOLValue:YES forKey:achievementCompletedKey];
           }
         }
-      }
+      }];
     }
   }
 }
