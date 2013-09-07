@@ -93,6 +93,18 @@
   [self storeNSUIntegerValue:oldValue + 1 forKey:key];
 }
 
+- (void)increaseNSUIntegerValueForKey:(NSString *)key persistImmediately:(BOOL)persistImmediately {
+  if (persistImmediately) {
+    [self increaseNSUIntegerValueForKey:key];
+  } else {
+    NSUInteger oldValue = [self getNSUIntegerValueWithKey:key defaultValue:0];
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+
+    [defaults setValue:@(oldValue + 1) forKey:key];
+  }
+}
+
 - (NSUInteger)getNSUIntegerValueWithKey:(NSString *)key {
   return [[self getValueWithKey:key] intValue];
 }

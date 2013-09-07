@@ -38,6 +38,8 @@
 
 - (void)increaseNSUIntegerValueForKey:(NSString *)key;
 
+- (void)increaseNSUIntegerValueForKey:(NSString *)key persistImmediately:(BOOL)persistImmediately;
+
 - (NSUInteger)getNSUIntegerValueWithKey:(NSString *)key;
 
 - (NSUInteger)getNSUIntegerValueWithKey:(NSString *)key defaultValue:(NSUInteger)defaultValue;
