@@ -8,11 +8,13 @@
 
 #import "FFSimpleArrayStore.h"
 
+
 @interface FFSimpleArrayStore ()
 
 @property (copy) NSString *identifier;
 
 @end
+
 
 @implementation FFSimpleArrayStore
 
@@ -20,7 +22,6 @@
 + (instancetype)storeWithIdentifier:(NSString *)identifier {
   return [[self alloc] initWithIdentifier:identifier];
 }
-
 
 - (instancetype)initWithIdentifier:(NSString *)identifier {
   self = [super init];
@@ -32,7 +33,6 @@
 }
 
 
-# pragma mark
 # pragma mark - main
 
 
@@ -40,11 +40,9 @@
   [self setObjects:@[]];
 }
 
-
 - (void)addObject:(id)object {
   [self addObject:object removeDuplicates:NO];
 }
-
 
 - (void)addObject:(id)object skipIfDuplicated:(BOOL)skipIfDuplicated {
   if (skipIfDuplicated && [[self allObjects] containsObject:object]) {
@@ -53,7 +51,6 @@
 
   [self addObject:object];
 }
-
 
 - (void)addObject:(id)object removeDuplicates:(BOOL)removeDuplicates {
   NSMutableArray *objects = [[self allObjects] mutableCopy];
@@ -67,7 +64,6 @@
   [self setObjects:objects];
 }
 
-
 - (NSArray *)allObjects {
   NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 
@@ -80,6 +76,9 @@
   return [defaults objectForKey:self.identifier];
 }
 
+- (NSUInteger)count {
+  return self.allObjects.count;
+}
 
 - (void)removeObjectAtIndex:(NSUInteger)index {
   NSMutableArray *objects = [[self allObjects] mutableCopy];
@@ -90,7 +89,6 @@
 }
 
 
-# pragma mark
 # pragma mark - private
 
 

@@ -8,6 +8,7 @@
 
 #import "FFSimpleKeyValueStore.h"
 
+
 @implementation FFSimpleKeyValueStore
 
 
@@ -23,7 +24,6 @@
 }
 
 
-# pragma mark
 # pragma mark - general access methods
 
 
@@ -36,18 +36,15 @@
 
 }
 
-
 - (id)getValueWithKey:(NSString *)key {
   NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 
   return [defaults valueForKey:key];
 }
 
-
 - (id)getValueWithKey:(NSString *)key defaultValue:(id)defaultValue {
   return [self getValueWithKey:key defaultValue:defaultValue storeDefaultValueIfNotPresent:NO];
 }
-
 
 - (id)getValueWithKey:(NSString *)key defaultValue:(id)defaultValue storeDefaultValueIfNotPresent:(BOOL)storeDefault {
   NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -68,7 +65,6 @@
 }
 
 
-# pragma mark
 # pragma mark - BOOL
 
 
@@ -76,18 +72,15 @@
   [self storeValue:@(boolValue) forKey:key];
 }
 
-
 - (BOOL)getBOOLValueWithKey:(NSString *)key {
   return [[self getValueWithKey:key] boolValue];
 }
-
 
 - (BOOL)getBOOLValueWithKey:(NSString *)key defaultValue:(BOOL)defaultValue {
   return [[self getValueWithKey:key defaultValue:@(defaultValue) storeDefaultValueIfNotPresent:NO] boolValue];
 }
 
 
-# pragma mark
 # pragma mark - NSUInteger
 
 
@@ -95,17 +88,14 @@
   [self storeValue:@(intValue) forKey:key];
 }
 
-
 - (void)increaseNSUIntegerValueForKey:(NSString *)key {
   NSUInteger oldValue = [self getNSUIntegerValueWithKey:key defaultValue:0];
   [self storeNSUIntegerValue:oldValue + 1 forKey:key];
 }
 
-
 - (NSUInteger)getNSUIntegerValueWithKey:(NSString *)key {
   return [[self getValueWithKey:key] intValue];
 }
-
 
 - (NSUInteger)getNSUIntegerValueWithKey:(NSString *)key defaultValue:(NSUInteger)defaultValue {
   return [[self getValueWithKey:key defaultValue:@(defaultValue) storeDefaultValueIfNotPresent:NO] intValue];

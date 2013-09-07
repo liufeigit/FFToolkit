@@ -25,5 +25,6 @@
 
 - (NSArray *)allObjects;
 
+- (NSUInteger)count;
 
 @end
