@@ -19,6 +19,6 @@
 
 - (void)reportAchievementWithIdentifier:(NSString *)identifier;
 
-- (void)reportAchievementWithIdentifier:(NSString *)identifier percentComplete:(float)percent;
+- (void)reportAchievementWithIdentifier:(NSString *)identifier percentComplete:(double)percent;
 
 @end

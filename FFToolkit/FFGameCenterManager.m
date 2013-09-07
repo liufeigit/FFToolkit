@@ -50,13 +50,16 @@
 - (void)setupGameCenter {
   __weak GKLocalPlayer *localPlayer = [GKLocalPlayer localPlayer];
 
-  localPlayer.authenticateHandler = ^(UIViewController *viewController, NSError *error){
+  localPlayer.authenticateHandler = ^(UIViewController *viewController, NSError *error) {
     if (viewController) {
       // don't present this view controller for now
+      NSLog(@"user not logged into game center");
       self.gameCenterEnabled = NO;
     } else if (localPlayer.isAuthenticated) {
+      NSLog(@"game center enabled!");
       self.gameCenterEnabled = YES;
     } else {
+      NSLog(@"game center disabled!");
       self.gameCenterEnabled = NO;
     }
   };
@@ -72,7 +75,13 @@
     scoreReporter.value = score;
     scoreReporter.context = 0;
 
-    [scoreReporter reportScoreWithCompletionHandler:nil];
+    [scoreReporter reportScoreWithCompletionHandler:^(NSError *error) {
+      if (error) {
+        NSLog(@"Error in reporting score: %@", error.debugDescription);
+      } else {
+        NSLog(@"Score reported for %@ : %lld", identifier, score);
+      }
+    }];
   }
 }
 
@@ -84,7 +93,7 @@
   [self reportAchievementWithIdentifier:identifier percentComplete:100];
 }
 
-- (void)reportAchievementWithIdentifier:(NSString *)identifier percentComplete:(float)percent {
+- (void)reportAchievementWithIdentifier:(NSString *)identifier percentComplete:(double)percent {
   if (self.gameCenterEnabled) {
     GKAchievement *achievement = [[GKAchievement alloc] initWithIdentifier:identifier];
 
@@ -92,7 +101,9 @@
       achievement.percentComplete = percent;
       [achievement reportAchievementWithCompletionHandler:^(NSError *error) {
         if (error != nil) {
-          NSLog(@"Error in reporting achievements: %@", error);
+          NSLog(@"Error in reporting achievements: %@", error.debugDescription);
+        } else {
+          NSLog(@"achievement reported: %@", achievement);
         }
       }];
     }
