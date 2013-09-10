@@ -14,9 +14,16 @@
 @property (nonatomic, readonly) NSUInteger rowNumber;
 @property (nonatomic, readonly) NSUInteger columnNumber;
 
+// deprecated
+@property (nonatomic, readonly) NSUInteger internalIndex;
+
 @property (nonatomic, readonly) NSArray *nearbyGrids;
 
 + (instancetype)gridAtRow:(NSUInteger)rowNumber column:(NSUInteger)columnNumber;
+
+// deprecated?
++ (instancetype)gridAtIndex:(NSUInteger)index;
++ (NSArray *)allGrids;
 
 + (void)setUniverseWidth:(NSUInteger)width height:(NSUInteger)height;
 

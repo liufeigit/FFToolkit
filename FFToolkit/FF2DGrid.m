@@ -57,15 +57,17 @@ static NSMutableArray *FF2DGridAllGrids = nil;
 # pragma mark
 
 
+- (NSUInteger)internalIndex {
+  return self.indexInCache;
+}
+
 + (instancetype)gridAtRow:(NSUInteger)rowNumber column:(NSUInteger)columnNumber {
   return FF2DGridAllGrids[rowNumber * FF2DGridUniverseWidth + columnNumber];
 }
 
-
 - (NSUInteger)indexInCache {
   return self.rowNumber * FF2DGridUniverseWidth + self.columnNumber;
 }
-
 
 - (NSArray *)nearbyGrids {
   NSMutableArray *nearbyGrids = [NSMutableArray array];
@@ -111,6 +113,18 @@ static NSMutableArray *FF2DGridAllGrids = nil;
   }
 
   return nearbyGrids;
+}
+
+
+# pragma mark - deprecated
+
+
++ (instancetype)gridAtIndex:(NSUInteger)index {
+  return FF2DGridAllGrids[index];
+}
+
++ (NSArray *)allGrids {
+  return FF2DGridAllGrids;
 }
 
 
