@@ -17,6 +17,7 @@
 // deprecated
 @property (nonatomic, readonly) NSUInteger internalIndex;
 
+// include diagonal grids
 @property (nonatomic, readonly) NSArray *nearbyGrids;
 
 + (instancetype)gridAtRow:(NSUInteger)rowNumber column:(NSUInteger)columnNumber;
