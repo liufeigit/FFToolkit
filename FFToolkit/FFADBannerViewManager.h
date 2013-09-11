@@ -11,7 +11,7 @@
 #import <iAd/iAd.h>
 
 
-@interface FFADBannerViewDelegate : NSObject <ADBannerViewDelegate>
+@interface FFADBannerViewManager : NSObject <ADBannerViewDelegate>
 
 
 @property (nonatomic) ADBannerView *adBannerView;

@@ -6,12 +6,12 @@
 //  Copyright (c) 2013 Forrest Ye. All rights reserved.
 //
 
-#import "FFADBannerViewDelegate.h"
+#import "FFADBannerViewManager.h"
 
 #import "CGGeometry+FFAdditions.h"
 
 
-@interface FFADBannerViewDelegate ()
+@interface FFADBannerViewManager ()
 
 @property (nonatomic) BOOL adBannerViewVisible;
 @property (nonatomic) UIScrollView *scrollView;
@@ -20,7 +20,7 @@
 @end
 
 
-@implementation FFADBannerViewDelegate
+@implementation FFADBannerViewManager
 
 
 - (instancetype)initWithScrollView:(UIScrollView *)scrollView {

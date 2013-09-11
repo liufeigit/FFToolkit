@@ -37,7 +37,7 @@
 		684298A217D9C04400907AE1 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684298A117D9C04400907AE1 /* iAd.framework */; };
 		684298A617D9C2CD00907AE1 /* FFStopWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 684298A517D9C2CD00907AE1 /* FFStopWatch.m */; };
 		68A4860717B38727002D83E2 /* FFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A4860617B38727002D83E2 /* FFAppDelegate.m */; };
-		68C9E07B17B4AA9300EA1FAA /* FFADBannerViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C9E07A17B4AA9300EA1FAA /* FFADBannerViewDelegate.m */; };
+		68C9E07B17B4AA9300EA1FAA /* FFADBannerViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C9E07A17B4AA9300EA1FAA /* FFADBannerViewManager.m */; };
 		68C9E07F17B4B8BF00EA1FAA /* FFArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C9E07E17B4B8BF00EA1FAA /* FFArrayDataSource.m */; };
 /* End PBXBuildFile section */
 
@@ -118,8 +118,8 @@
 		6842BAFB17B09CAC00E2AB30 /* FFAssertions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFAssertions.h; sourceTree = "<group>"; };
 		68A4860517B38727002D83E2 /* FFAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFAppDelegate.h; sourceTree = "<group>"; };
 		68A4860617B38727002D83E2 /* FFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFAppDelegate.m; sourceTree = "<group>"; };
-		68C9E07917B4AA9300EA1FAA /* FFADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFADBannerViewDelegate.h; sourceTree = "<group>"; };
-		68C9E07A17B4AA9300EA1FAA /* FFADBannerViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFADBannerViewDelegate.m; sourceTree = "<group>"; };
+		68C9E07917B4AA9300EA1FAA /* FFADBannerViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFADBannerViewManager.h; sourceTree = "<group>"; };
+		68C9E07A17B4AA9300EA1FAA /* FFADBannerViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFADBannerViewManager.m; sourceTree = "<group>"; };
 		68C9E07D17B4B8BF00EA1FAA /* FFArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFArrayDataSource.h; sourceTree = "<group>"; };
 		68C9E07E17B4B8BF00EA1FAA /* FFArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFArrayDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,8 +190,8 @@
 				6816DE1E17A13BCB00D0B70E /* CoreExtensions */,
 				6816DE0A17A137D400D0B70E /* Controllers */,
 				6816DE1D17A13BB100D0B70E /* Views */,
-				68C9E07917B4AA9300EA1FAA /* FFADBannerViewDelegate.h */,
-				68C9E07A17B4AA9300EA1FAA /* FFADBannerViewDelegate.m */,
+				68C9E07917B4AA9300EA1FAA /* FFADBannerViewManager.h */,
+				68C9E07A17B4AA9300EA1FAA /* FFADBannerViewManager.m */,
 				682D9C0817E04B0300C43AA1 /* FFAudioManager.h */,
 				682D9C0717E04B0300C43AA1 /* FFAudioManager.m */,
 				6842BAFB17B09CAC00E2AB30 /* FFAssertions.h */,
@@ -407,7 +407,7 @@
 				6816DE1C17A13BAA00D0B70E /* NSMutableArray+FFAdditions.m in Sources */,
 				6816DE2117A13E3100D0B70E /* FFSolidColorTableHeaderView.m in Sources */,
 				68A4860717B38727002D83E2 /* FFAppDelegate.m in Sources */,
-				68C9E07B17B4AA9300EA1FAA /* FFADBannerViewDelegate.m in Sources */,
+				68C9E07B17B4AA9300EA1FAA /* FFADBannerViewManager.m in Sources */,
 				68C9E07F17B4B8BF00EA1FAA /* FFArrayDataSource.m in Sources */,
 				684298A617D9C2CD00907AE1 /* FFStopWatch.m in Sources */,
 				682D9C0017E0122300C43AA1 /* FFFrameManager.m in Sources */,
