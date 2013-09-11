@@ -128,11 +128,11 @@ static NSMutableArray *FF2DGridAllGrids = nil;
 }
 
 
-# pragma mark - introspection
+# pragma mark - pretty printing
 
 
 - (NSString *)description {
-  return [NSString stringWithFormat:@"(%d, %d)", self.rowNumber, self.columnNumber];
+  return [NSString stringWithFormat:@"(%ld, %ld)", (unsigned long)self.rowNumber, (unsigned long)self.columnNumber];
 }
 
 
