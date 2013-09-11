@@ -8,12 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-
-@protocol FFFrameManagerDelegate <NSObject>
-
-- (void)frameManagerDidUpdateFrame;
-
-@end
+#import "FFFrameManagerDelegate.h"
 
 
 @interface FFFrameManager : NSObject

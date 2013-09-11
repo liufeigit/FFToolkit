@@ -100,6 +100,7 @@
 		682D9BFD17E0122300C43AA1 /* FFFrameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFrameManager.h; sourceTree = "<group>"; };
 		682D9BFE17E0122300C43AA1 /* FF2DGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FF2DGrid.h; sourceTree = "<group>"; };
 		682D9BFF17E0122300C43AA1 /* FF2DGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FF2DGrid.m; sourceTree = "<group>"; };
+		682D9C0617E01A4A00C43AA1 /* FFFrameManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFFrameManagerDelegate.h; sourceTree = "<group>"; };
 		6840388A17B3EA75007AADD3 /* CGGeometry+FFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGGeometry+FFAdditions.h"; sourceTree = "<group>"; };
 		6840388D17B3EADC007AADD3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6842989317D9BC5A00907AE1 /* FFStopWatchTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFStopWatchTests.h; sourceTree = "<group>"; };
@@ -278,8 +279,9 @@
 		684298A317D9C2CD00907AE1 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				682D9BFC17E0122300C43AA1 /* FFFrameManager.m */,
+				682D9C0617E01A4A00C43AA1 /* FFFrameManagerDelegate.h */,
 				682D9BFD17E0122300C43AA1 /* FFFrameManager.h */,
+				682D9BFC17E0122300C43AA1 /* FFFrameManager.m */,
 				682D9BFE17E0122300C43AA1 /* FF2DGrid.h */,
 				682D9BFF17E0122300C43AA1 /* FF2DGrid.m */,
 				684298A417D9C2CD00907AE1 /* FFStopWatch.h */,
