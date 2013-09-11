@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-@protocol FTTFrameManagerDelegate <NSObject>
+@protocol FFFrameManagerDelegate <NSObject>
 
 - (void)frameManagerDidUpdateFrame;
 
@@ -18,12 +18,14 @@
 
 @interface FFFrameManager : NSObject
 
-@property (nonatomic, weak) id<FTTFrameManagerDelegate> delegate;
+@property (nonatomic, weak) id<FFFrameManagerDelegate> delegate;
 
 - (instancetype)initWithFrameRate:(NSUInteger)frameRate;
 
 - (void)start;
 
 - (void)pause;
+
+- (BOOL)running;
 
 @end

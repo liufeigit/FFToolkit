@@ -41,5 +41,9 @@
   [self.timer invalidate];
 }
 
+- (BOOL)running {
+  return self.timer.isValid;
+}
+
 
 @end
