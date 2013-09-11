@@ -8,8 +8,6 @@
 
 #import "FFADBannerViewManager.h"
 
-#import "CGGeometry+FFAdditions.h"
-
 
 @interface FFADBannerViewManager ()
 
@@ -65,7 +63,7 @@
 
   if (!self.adBannerViewVisible) {
     [UIView animateWithDuration:0.7 animations:^{
-      banner.center = CGPointOffset(banner.center, 0, -CGRectGetHeight(banner.frame));
+      banner.center = CGPointMake(banner.center.x, banner.center.y - CGRectGetHeight(banner.frame));
 
       if (self.scrollView) {
         UIEdgeInsets newEdgeInsets = UIEdgeInsetsMake(self.scrollView.contentInset.top, 0, CGRectGetHeight(banner.frame), 0);
@@ -85,7 +83,7 @@
 
   if (self.adBannerViewVisible) {
     [UIView animateWithDuration:0.7 animations:^{
-      banner.center = CGPointOffset(banner.center, 0, CGRectGetHeight(banner.frame));
+      banner.center = CGPointMake(banner.center.x, banner.center.y + CGRectGetHeight(banner.frame));
 
       if (self.scrollView) {
         UIEdgeInsets newEdgeInsets = UIEdgeInsetsMake(self.scrollView.contentInset.top, 0, 0, 0);
