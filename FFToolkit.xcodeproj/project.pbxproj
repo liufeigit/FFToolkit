@@ -14,8 +14,6 @@
 		6816DDEC17A1375800D0B70E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6816DDEA17A1375800D0B70E /* InfoPlist.strings */; };
 		6816DE0417A137C600D0B70E /* FFFileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DDF917A137C600D0B70E /* FFFileUtils.m */; };
 		6816DE0517A137C600D0B70E /* FFListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DDFB17A137C600D0B70E /* FFListViewController.m */; };
-		6816DE0617A137C600D0B70E /* FFLookupHistoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DDFD17A137C600D0B70E /* FFLookupHistoryManager.m */; };
-		6816DE0717A137C600D0B70E /* FFLookupHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DDFF17A137C600D0B70E /* FFLookupHistoryViewController.m */; };
 		6816DE0817A137C600D0B70E /* FFSimpleArrayStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DE0117A137C600D0B70E /* FFSimpleArrayStore.m */; };
 		6816DE0917A137C600D0B70E /* FFSimpleKeyValueStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DE0317A137C600D0B70E /* FFSimpleKeyValueStore.m */; };
 		6816DE0D17A13A2300D0B70E /* NSString+FFRegexAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DE0C17A13A2300D0B70E /* NSString+FFRegexAdditions.m */; };
@@ -24,10 +22,12 @@
 		6816DE1A17A13BAA00D0B70E /* FFLabeledButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DE1317A13BAA00D0B70E /* FFLabeledButton.m */; };
 		6816DE1B17A13BAA00D0B70E /* NSArray+FFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DE1517A13BAA00D0B70E /* NSArray+FFAdditions.m */; };
 		6816DE1C17A13BAA00D0B70E /* NSMutableArray+FFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DE1717A13BAA00D0B70E /* NSMutableArray+FFAdditions.m */; };
-		6816DE2117A13E3100D0B70E /* FFSolidColorTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816DE2017A13E3100D0B70E /* FFSolidColorTableHeaderView.m */; };
 		682D9C0017E0122300C43AA1 /* FFFrameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D9BFC17E0122300C43AA1 /* FFFrameManager.m */; };
 		682D9C0117E0122300C43AA1 /* FF2DGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D9BFF17E0122300C43AA1 /* FF2DGrid.m */; };
 		682D9C0917E04B0300C43AA1 /* FFAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D9C0717E04B0300C43AA1 /* FFAudioManager.m */; };
+		682D9C1717E04FE300C43AA1 /* FFLookupHistoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D9C1217E04FE300C43AA1 /* FFLookupHistoryManager.m */; };
+		682D9C1817E04FE300C43AA1 /* FFLookupHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D9C1417E04FE300C43AA1 /* FFLookupHistoryViewController.m */; };
+		682D9C1917E04FE300C43AA1 /* FFSolidColorTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D9C1617E04FE300C43AA1 /* FFSolidColorTableHeaderView.m */; };
 		6840388E17B3EADC007AADD3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6840388D17B3EADC007AADD3 /* CoreGraphics.framework */; };
 		6842989517D9BC5A00907AE1 /* FFStopWatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6842989417D9BC5A00907AE1 /* FFStopWatchTests.m */; };
 		6842989A17D9BCA100907AE1 /* FFGameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6842989717D9BCA100907AE1 /* FFGameCenterManager.m */; };
@@ -75,10 +75,6 @@
 		6816DDF917A137C600D0B70E /* FFFileUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFFileUtils.m; sourceTree = "<group>"; };
 		6816DDFA17A137C600D0B70E /* FFListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFListViewController.h; sourceTree = "<group>"; };
 		6816DDFB17A137C600D0B70E /* FFListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFListViewController.m; sourceTree = "<group>"; };
-		6816DDFC17A137C600D0B70E /* FFLookupHistoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFLookupHistoryManager.h; sourceTree = "<group>"; };
-		6816DDFD17A137C600D0B70E /* FFLookupHistoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFLookupHistoryManager.m; sourceTree = "<group>"; };
-		6816DDFE17A137C600D0B70E /* FFLookupHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFLookupHistoryViewController.h; sourceTree = "<group>"; };
-		6816DDFF17A137C600D0B70E /* FFLookupHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFLookupHistoryViewController.m; sourceTree = "<group>"; };
 		6816DE0017A137C600D0B70E /* FFSimpleArrayStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFSimpleArrayStore.h; sourceTree = "<group>"; };
 		6816DE0117A137C600D0B70E /* FFSimpleArrayStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSimpleArrayStore.m; sourceTree = "<group>"; };
 		6816DE0217A137C600D0B70E /* FFSimpleKeyValueStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFSimpleKeyValueStore.h; sourceTree = "<group>"; };
@@ -95,8 +91,6 @@
 		6816DE1517A13BAA00D0B70E /* NSArray+FFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FFAdditions.m"; sourceTree = "<group>"; };
 		6816DE1617A13BAA00D0B70E /* NSMutableArray+FFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+FFAdditions.h"; sourceTree = "<group>"; };
 		6816DE1717A13BAA00D0B70E /* NSMutableArray+FFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+FFAdditions.m"; sourceTree = "<group>"; };
-		6816DE1F17A13E3100D0B70E /* FFSolidColorTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFSolidColorTableHeaderView.h; sourceTree = "<group>"; };
-		6816DE2017A13E3100D0B70E /* FFSolidColorTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSolidColorTableHeaderView.m; sourceTree = "<group>"; };
 		682D9BFC17E0122300C43AA1 /* FFFrameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFFrameManager.m; sourceTree = "<group>"; };
 		682D9BFD17E0122300C43AA1 /* FFFrameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFrameManager.h; sourceTree = "<group>"; };
 		682D9BFE17E0122300C43AA1 /* FF2DGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FF2DGrid.h; sourceTree = "<group>"; };
@@ -104,7 +98,13 @@
 		682D9C0617E01A4A00C43AA1 /* FFFrameManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFFrameManagerDelegate.h; sourceTree = "<group>"; };
 		682D9C0717E04B0300C43AA1 /* FFAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFAudioManager.m; sourceTree = "<group>"; };
 		682D9C0817E04B0300C43AA1 /* FFAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFAudioManager.h; sourceTree = "<group>"; };
-		6840388A17B3EA75007AADD3 /* CGGeometry+FFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGGeometry+FFAdditions.h"; sourceTree = "<group>"; };
+		682D9C1017E04FE300C43AA1 /* CGGeometry+FFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGGeometry+FFAdditions.h"; sourceTree = "<group>"; };
+		682D9C1117E04FE300C43AA1 /* FFLookupHistoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFLookupHistoryManager.h; sourceTree = "<group>"; };
+		682D9C1217E04FE300C43AA1 /* FFLookupHistoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFLookupHistoryManager.m; sourceTree = "<group>"; };
+		682D9C1317E04FE300C43AA1 /* FFLookupHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFLookupHistoryViewController.h; sourceTree = "<group>"; };
+		682D9C1417E04FE300C43AA1 /* FFLookupHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFLookupHistoryViewController.m; sourceTree = "<group>"; };
+		682D9C1517E04FE300C43AA1 /* FFSolidColorTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFSolidColorTableHeaderView.h; sourceTree = "<group>"; };
+		682D9C1617E04FE300C43AA1 /* FFSolidColorTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSolidColorTableHeaderView.m; sourceTree = "<group>"; };
 		6840388D17B3EADC007AADD3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6842989317D9BC5A00907AE1 /* FFStopWatchTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFStopWatchTests.h; sourceTree = "<group>"; };
 		6842989417D9BC5A00907AE1 /* FFStopWatchTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFStopWatchTests.m; sourceTree = "<group>"; };
@@ -186,6 +186,7 @@
 		6816DDD217A1375800D0B70E /* FFToolkit */ = {
 			isa = PBXGroup;
 			children = (
+				682D9C0F17E04FE300C43AA1 /* Deprecated */,
 				684298A317D9C2CD00907AE1 /* Shared */,
 				6816DE1E17A13BCB00D0B70E /* CoreExtensions */,
 				6816DE0A17A137D400D0B70E /* Controllers */,
@@ -197,7 +198,6 @@
 				6842BAFB17B09CAC00E2AB30 /* FFAssertions.h */,
 				6816DDF817A137C600D0B70E /* FFFileUtils.h */,
 				6816DDF917A137C600D0B70E /* FFFileUtils.m */,
-				682D9C0A17E04D5400C43AA1 /* Deprecated */,
 				682D9C0B17E04D7D00C43AA1 /* Stores */,
 				68A4860517B38727002D83E2 /* FFAppDelegate.h */,
 				68A4860617B38727002D83E2 /* FFAppDelegate.m */,
@@ -242,7 +242,6 @@
 			children = (
 				6816DDFA17A137C600D0B70E /* FFListViewController.h */,
 				6816DDFB17A137C600D0B70E /* FFListViewController.m */,
-				682D9C0C17E04E1B00C43AA1 /* Deprecated */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -250,7 +249,6 @@
 		6816DE1D17A13BB100D0B70E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				682D9C0D17E04E3500C43AA1 /* Deprecated */,
 				6816DE0E17A13BAA00D0B70E /* FFButton.h */,
 				6816DE0F17A13BAA00D0B70E /* FFButton.m */,
 				6816DE1017A13BAA00D0B70E /* FFLabel.h */,
@@ -270,18 +268,8 @@
 				6816DE1517A13BAA00D0B70E /* NSArray+FFAdditions.m */,
 				6816DE1617A13BAA00D0B70E /* NSMutableArray+FFAdditions.h */,
 				6816DE1717A13BAA00D0B70E /* NSMutableArray+FFAdditions.m */,
-				682D9C0E17E04E4D00C43AA1 /* Deprecated */,
 			);
 			name = CoreExtensions;
-			sourceTree = "<group>";
-		};
-		682D9C0A17E04D5400C43AA1 /* Deprecated */ = {
-			isa = PBXGroup;
-			children = (
-				6816DDFC17A137C600D0B70E /* FFLookupHistoryManager.h */,
-				6816DDFD17A137C600D0B70E /* FFLookupHistoryManager.m */,
-			);
-			name = Deprecated;
 			sourceTree = "<group>";
 		};
 		682D9C0B17E04D7D00C43AA1 /* Stores */ = {
@@ -295,30 +283,18 @@
 			name = Stores;
 			sourceTree = "<group>";
 		};
-		682D9C0C17E04E1B00C43AA1 /* Deprecated */ = {
+		682D9C0F17E04FE300C43AA1 /* Deprecated */ = {
 			isa = PBXGroup;
 			children = (
-				6816DDFE17A137C600D0B70E /* FFLookupHistoryViewController.h */,
-				6816DDFF17A137C600D0B70E /* FFLookupHistoryViewController.m */,
+				682D9C1017E04FE300C43AA1 /* CGGeometry+FFAdditions.h */,
+				682D9C1117E04FE300C43AA1 /* FFLookupHistoryManager.h */,
+				682D9C1217E04FE300C43AA1 /* FFLookupHistoryManager.m */,
+				682D9C1317E04FE300C43AA1 /* FFLookupHistoryViewController.h */,
+				682D9C1417E04FE300C43AA1 /* FFLookupHistoryViewController.m */,
+				682D9C1517E04FE300C43AA1 /* FFSolidColorTableHeaderView.h */,
+				682D9C1617E04FE300C43AA1 /* FFSolidColorTableHeaderView.m */,
 			);
-			name = Deprecated;
-			sourceTree = "<group>";
-		};
-		682D9C0D17E04E3500C43AA1 /* Deprecated */ = {
-			isa = PBXGroup;
-			children = (
-				6816DE1F17A13E3100D0B70E /* FFSolidColorTableHeaderView.h */,
-				6816DE2017A13E3100D0B70E /* FFSolidColorTableHeaderView.m */,
-			);
-			name = Deprecated;
-			sourceTree = "<group>";
-		};
-		682D9C0E17E04E4D00C43AA1 /* Deprecated */ = {
-			isa = PBXGroup;
-			children = (
-				6840388A17B3EA75007AADD3 /* CGGeometry+FFAdditions.h */,
-			);
-			name = Deprecated;
+			path = Deprecated;
 			sourceTree = "<group>";
 		};
 		684298A317D9C2CD00907AE1 /* Shared */ = {
@@ -435,8 +411,6 @@
 			files = (
 				6816DE0417A137C600D0B70E /* FFFileUtils.m in Sources */,
 				6816DE0517A137C600D0B70E /* FFListViewController.m in Sources */,
-				6816DE0617A137C600D0B70E /* FFLookupHistoryManager.m in Sources */,
-				6816DE0717A137C600D0B70E /* FFLookupHistoryViewController.m in Sources */,
 				6816DE0817A137C600D0B70E /* FFSimpleArrayStore.m in Sources */,
 				6816DE0917A137C600D0B70E /* FFSimpleKeyValueStore.m in Sources */,
 				6816DE0D17A13A2300D0B70E /* NSString+FFRegexAdditions.m in Sources */,
@@ -445,7 +419,6 @@
 				6816DE1A17A13BAA00D0B70E /* FFLabeledButton.m in Sources */,
 				6816DE1B17A13BAA00D0B70E /* NSArray+FFAdditions.m in Sources */,
 				6816DE1C17A13BAA00D0B70E /* NSMutableArray+FFAdditions.m in Sources */,
-				6816DE2117A13E3100D0B70E /* FFSolidColorTableHeaderView.m in Sources */,
 				68A4860717B38727002D83E2 /* FFAppDelegate.m in Sources */,
 				68C9E07B17B4AA9300EA1FAA /* FFADBannerViewManager.m in Sources */,
 				68C9E07F17B4B8BF00EA1FAA /* FFArrayDataSource.m in Sources */,
@@ -453,6 +426,9 @@
 				682D9C0017E0122300C43AA1 /* FFFrameManager.m in Sources */,
 				682D9C0117E0122300C43AA1 /* FF2DGrid.m in Sources */,
 				682D9C0917E04B0300C43AA1 /* FFAudioManager.m in Sources */,
+				682D9C1717E04FE300C43AA1 /* FFLookupHistoryManager.m in Sources */,
+				682D9C1817E04FE300C43AA1 /* FFLookupHistoryViewController.m in Sources */,
+				682D9C1917E04FE300C43AA1 /* FFSolidColorTableHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
