@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.osx.source_files = 'FFToolkit/Shared'
   s.requires_arc     = true
 
-  # TODO: fix this. requiring iAd and GameKit frameworks in order to build is ugly
-  s.ios.frameworks = ['iAd', 'GameKit']
+  # TODO: fix this. requiring all these frameworks in order to build is ugly
+  s.ios.frameworks = ['iAd', 'GameKit', 'AVFoundation', 'AudioToolbox']
   s.ios.deployment_target = '6.0'
   s.osx.deployment_target = '10.8'
 end
