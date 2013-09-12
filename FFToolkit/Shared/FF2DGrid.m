@@ -62,6 +62,10 @@ static NSMutableArray *FF2DGridAllGrids = nil;
 }
 
 + (instancetype)gridAtRow:(NSUInteger)rowNumber column:(NSUInteger)columnNumber {
+  if (rowNumber >= FF2DUniverseHeight || columnNumber >= FF2DGridUniverseWidth) {
+    return nil;
+  }
+
   return FF2DGridAllGrids[rowNumber * FF2DGridUniverseWidth + columnNumber];
 }
 
