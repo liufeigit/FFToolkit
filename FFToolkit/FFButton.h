@@ -8,16 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-
-@class FFButton;
-
-
-@protocol FFButtonDelegate <NSObject>
-
-- (void)didPressedButton:(FFButton *)button;
-
-@end
-
+#import "FFButtonDelegate.h"
 
 
 @interface FFButton : UIView

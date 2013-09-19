@@ -122,6 +122,7 @@
 		68C9E07A17B4AA9300EA1FAA /* FFADBannerViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFADBannerViewManager.m; sourceTree = "<group>"; };
 		68C9E07D17B4B8BF00EA1FAA /* FFArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFArrayDataSource.h; sourceTree = "<group>"; };
 		68C9E07E17B4B8BF00EA1FAA /* FFArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFArrayDataSource.m; sourceTree = "<group>"; };
+		68FFC98317EAE123003B2870 /* FFButtonDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFButtonDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +250,7 @@
 		6816DE1D17A13BB100D0B70E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				68FFC98317EAE123003B2870 /* FFButtonDelegate.h */,
 				6816DE0E17A13BAA00D0B70E /* FFButton.h */,
 				6816DE0F17A13BAA00D0B70E /* FFButton.m */,
 				6816DE1017A13BAA00D0B70E /* FFLabel.h */,
