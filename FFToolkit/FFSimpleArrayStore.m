@@ -58,7 +58,7 @@
   [objects insertObject:object atIndex:0];
 
   if (removeDuplicates) {
-    objects = [[[NSOrderedSet orderedSetWithArray:objects] allObjects] mutableCopy];
+    objects = [[[NSOrderedSet orderedSetWithArray:objects] array] mutableCopy];
   }
 
   [self setObjects:objects];

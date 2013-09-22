@@ -25,7 +25,6 @@
   return self;
 }
 
-
 - (void)viewDidLoad {
   [super viewDidLoad];
 
@@ -37,11 +36,22 @@
   [self.tableView registerClass:self.cellClass forCellReuseIdentifier:NSStringFromClass(self.cellClass)];
 }
 
-
 - (void)setupUIConstraints {
   NSDictionary *views = NSDictionaryOfVariableBindings(_tableView);
   [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|[_tableView]|" options:0 metrics:nil views:views]];
   [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_tableView]|" options:0 metrics:nil views:views]];
+}
+
+
+# pragma mark - UITableViewDataSource
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+  @throw @"should override this";
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+  @throw @"should override this";
 }
 
 
