@@ -268,8 +268,8 @@
 			children = (
 				681422D2180468C6008A5944 /* FFPagingNavigationBar.h */,
 				681422D3180468C6008A5944 /* FFPagingNavigationBar.m */,
-				681422D4180468C6008A5944 /* FFPagingNavigationBarBackButton.m */,
 				681422D5180468C6008A5944 /* FFPagingNavigationBarBackButton.h */,
+				681422D4180468C6008A5944 /* FFPagingNavigationBarBackButton.m */,
 				68FFC98317EAE123003B2870 /* FFButtonDelegate.h */,
 				6816DE0E17A13BAA00D0B70E /* FFButton.h */,
 				6816DE0F17A13BAA00D0B70E /* FFButton.m */,
