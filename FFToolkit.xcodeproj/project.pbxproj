@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		681422D0180468B4008A5944 /* FFPagingNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681422CD180468B4008A5944 /* FFPagingNavigationController.m */; };
+		681422D1180468B4008A5944 /* FFScrollableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681422CF180468B4008A5944 /* FFScrollableViewController.m */; };
+		681422D6180468C6008A5944 /* FFPagingNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 681422D3180468C6008A5944 /* FFPagingNavigationBar.m */; };
+		681422D7180468C6008A5944 /* FFPagingNavigationBarBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 681422D4180468C6008A5944 /* FFPagingNavigationBarBackButton.m */; };
 		6816DDD117A1375800D0B70E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6816DDD017A1375800D0B70E /* Foundation.framework */; };
 		6816DDE017A1375800D0B70E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6816DDDF17A1375800D0B70E /* SenTestingKit.framework */; };
 		6816DDE317A1375800D0B70E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6816DDD017A1375800D0B70E /* Foundation.framework */; };
@@ -64,6 +68,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		681422CC180468B4008A5944 /* FFPagingNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFPagingNavigationController.h; sourceTree = "<group>"; };
+		681422CD180468B4008A5944 /* FFPagingNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFPagingNavigationController.m; sourceTree = "<group>"; };
+		681422CE180468B4008A5944 /* FFScrollableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFScrollableViewController.h; sourceTree = "<group>"; };
+		681422CF180468B4008A5944 /* FFScrollableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFScrollableViewController.m; sourceTree = "<group>"; };
+		681422D2180468C6008A5944 /* FFPagingNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFPagingNavigationBar.h; sourceTree = "<group>"; };
+		681422D3180468C6008A5944 /* FFPagingNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFPagingNavigationBar.m; sourceTree = "<group>"; };
+		681422D4180468C6008A5944 /* FFPagingNavigationBarBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFPagingNavigationBarBackButton.m; sourceTree = "<group>"; };
+		681422D5180468C6008A5944 /* FFPagingNavigationBarBackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFPagingNavigationBarBackButton.h; sourceTree = "<group>"; };
 		6816DDCD17A1375800D0B70E /* libFFToolkit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFFToolkit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6816DDD017A1375800D0B70E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6816DDD417A1375800D0B70E /* FFToolkit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FFToolkit-Prefix.pch"; sourceTree = "<group>"; };
@@ -241,6 +253,10 @@
 		6816DE0A17A137D400D0B70E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				681422CC180468B4008A5944 /* FFPagingNavigationController.h */,
+				681422CD180468B4008A5944 /* FFPagingNavigationController.m */,
+				681422CE180468B4008A5944 /* FFScrollableViewController.h */,
+				681422CF180468B4008A5944 /* FFScrollableViewController.m */,
 				6816DDFA17A137C600D0B70E /* FFListViewController.h */,
 				6816DDFB17A137C600D0B70E /* FFListViewController.m */,
 			);
@@ -250,6 +266,10 @@
 		6816DE1D17A13BB100D0B70E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				681422D2180468C6008A5944 /* FFPagingNavigationBar.h */,
+				681422D3180468C6008A5944 /* FFPagingNavigationBar.m */,
+				681422D4180468C6008A5944 /* FFPagingNavigationBarBackButton.m */,
+				681422D5180468C6008A5944 /* FFPagingNavigationBarBackButton.h */,
 				68FFC98317EAE123003B2870 /* FFButtonDelegate.h */,
 				6816DE0E17A13BAA00D0B70E /* FFButton.h */,
 				6816DE0F17A13BAA00D0B70E /* FFButton.m */,
@@ -421,9 +441,13 @@
 				6816DE1A17A13BAA00D0B70E /* FFLabeledButton.m in Sources */,
 				6816DE1B17A13BAA00D0B70E /* NSArray+FFAdditions.m in Sources */,
 				6816DE1C17A13BAA00D0B70E /* NSMutableArray+FFAdditions.m in Sources */,
+				681422D6180468C6008A5944 /* FFPagingNavigationBar.m in Sources */,
 				68A4860717B38727002D83E2 /* FFAppDelegate.m in Sources */,
 				68C9E07B17B4AA9300EA1FAA /* FFADBannerViewManager.m in Sources */,
+				681422D0180468B4008A5944 /* FFPagingNavigationController.m in Sources */,
+				681422D1180468B4008A5944 /* FFScrollableViewController.m in Sources */,
 				68C9E07F17B4B8BF00EA1FAA /* FFArrayDataSource.m in Sources */,
+				681422D7180468C6008A5944 /* FFPagingNavigationBarBackButton.m in Sources */,
 				684298A617D9C2CD00907AE1 /* FFStopWatch.m in Sources */,
 				682D9C0017E0122300C43AA1 /* FFFrameManager.m in Sources */,
 				682D9C0117E0122300C43AA1 /* FF2DGrid.m in Sources */,
