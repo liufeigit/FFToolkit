@@ -51,6 +51,7 @@
   self.backgroundScrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
   self.backgroundScrollView.pagingEnabled = YES;
   self.backgroundScrollView.showsHorizontalScrollIndicator = NO;
+  self.backgroundScrollView.canCancelContentTouches = NO;
 
   [self.view addSubview:self.backgroundScrollView];
 }

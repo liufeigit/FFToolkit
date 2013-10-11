@@ -31,7 +31,6 @@
   self.pressed = YES;
 }
 
-
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
   // touch up inside
   if (CGRectContainsPoint(self.bounds, [touches.anyObject locationInView:self]) && self.pressed) {
@@ -40,7 +39,6 @@
 
   self.pressed = NO;
 }
-
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
   self.pressed = NO;

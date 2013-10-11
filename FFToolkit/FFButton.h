@@ -13,10 +13,8 @@
 
 @interface FFButton : UIView
 
-
 @property (nonatomic) BOOL pressed;
 
 @property (nonatomic, weak) id<FFButtonDelegate> delegate;
-
 
 @end

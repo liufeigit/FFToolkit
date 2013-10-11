@@ -27,7 +27,7 @@
   self = [super initWithFrame:frame];
 
   if (self) {
-    self.color = RGB(89, 83, 83);
+    self.color = RGB(70, 66, 66);
 
     self.backgroundColor = [UIColor clearColor];
   }
@@ -42,7 +42,7 @@
     if (pressed) {
       self.color = RGB(211, 211, 211);
     } else {
-      self.color = RGB(89, 83, 83);
+      self.color = RGB(70, 66, 66);
     }
   }
 

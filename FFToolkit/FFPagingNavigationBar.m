@@ -17,6 +17,11 @@
 #import <QuartzCore/QuartzCore.h>
 
 
+#ifndef RGB
+#define RGB(__r__, __g__, __b__) [UIColor colorWithRed:__r__/255.0 green:__g__/255.0 blue:__b__/255.0 alpha:1]
+#endif
+
+
 @interface FFPagingNavigationBar ()
 
 @property (nonatomic) FFPagingNavigationBarBackButton *backButton;
@@ -66,6 +71,7 @@ const static CGFloat MSNPagingNavigationBarShadowOpacityAnimationDuration = 0.2f
   self.titleLabel = [[UILabel alloc] initWithFrame:frame];
   self.titleLabel.center = self.center;
   self.titleLabel.textAlignment = NSTextAlignmentCenter;
+  self.titleLabel.textColor = RGB(70, 66, 66);
 
   if (MSNDefaultTitleFont) {
     self.titleLabel.font = MSNDefaultTitleFont;
@@ -102,9 +108,10 @@ const static CGFloat MSNPagingNavigationBarShadowOpacityAnimationDuration = 0.2f
           animation.toValue = @(MSNPagingNavigationBarTargetShadowOpacity);
           animation.duration = MSNPagingNavigationBarShadowOpacityAnimationDuration;
           [self.layer addAnimation:animation forKey:@"shadowOpacity"];
+
+          self.layer.shadowOpacity = MSNPagingNavigationBarTargetShadowOpacity;
         }
       }
-      self.layer.shadowOpacity = MSNPagingNavigationBarTargetShadowOpacity;
 
     } else {
       // shadowOpacity animation
@@ -115,9 +122,10 @@ const static CGFloat MSNPagingNavigationBarShadowOpacityAnimationDuration = 0.2f
           animation.toValue = @0.0f;
           animation.duration = MSNPagingNavigationBarShadowOpacityAnimationDuration;
           [self.layer addAnimation:animation forKey:@"shadowOpacity"];
+
+          self.layer.shadowOpacity = 0;
         }
       }
-      self.layer.shadowOpacity = 0;
     }
   }
 }
