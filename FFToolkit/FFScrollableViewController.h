@@ -13,4 +13,6 @@
 
 @property (nonatomic, readonly) UIScrollView *scrollView;
 
+@property (nonatomic, readonly) BOOL displayShadowUnderNavigationBar;
+
 @end

@@ -112,11 +112,13 @@
 
     for (FFScrollableViewController *childViewController in viewControllersToRemove) {
 
-      // unregister navigationBar from KVO
-      // maybe we should make navigationBar a property in MSNScrollableViewController?
-      for (UIView *subView in childViewController.view.subviews) {
-        if ([subView isKindOfClass:[FFPagingNavigationBar class]]) {
-          [childViewController.scrollView removeObserver:subView forKeyPath:@"contentOffset"];
+      if (childViewController.displayShadowUnderNavigationBar) {
+        // unregister navigationBar from KVO
+        // maybe we should make navigationBar a property in MSNScrollableViewController?
+        for (UIView *subView in childViewController.view.subviews) {
+          if ([subView isKindOfClass:[FFPagingNavigationBar class]]) {
+            [childViewController.scrollView removeObserver:subView forKeyPath:@"contentOffset"];
+          }
         }
       }
 
@@ -135,7 +137,9 @@
 
   navigationBar.backButton.delegate = self;
 
-  [viewController.scrollView addObserver:navigationBar forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
+  if (viewController.displayShadowUnderNavigationBar) {
+    [viewController.scrollView addObserver:navigationBar forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
+  }
 
   viewController.scrollView.contentInset = UIEdgeInsetsMake(44, 0, 0, 0);
 

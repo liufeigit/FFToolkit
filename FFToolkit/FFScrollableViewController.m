@@ -21,5 +21,9 @@
   @throw @"should override";
 }
 
+-(BOOL)displayShadowUnderNavigationBar {
+  return YES;
+}
+
 
 @end
