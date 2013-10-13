@@ -55,6 +55,15 @@
 
 
 # pragma mark
+
+
+- (void)disable {
+  [self.adBannerView removeFromSuperview];
+  self.adBannerView.delegate = nil;
+  self.adBannerView = nil;
+}
+
+
 # pragma mark - ADBannerViewDelegate
 
 

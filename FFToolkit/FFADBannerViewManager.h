@@ -20,4 +20,6 @@
 
 - (instancetype)initWithContainerView:(UIView *)containerView;
 
+- (void)disable;
+
 @end
