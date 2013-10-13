@@ -36,7 +36,14 @@
 
 static UIFont *MSNDefaultTitleFont = nil;
 
-const static CGFloat MSNPagingNavigationBarHeight = 44;
+inline static CGFloat MSNPagingNavigationBarHeight() {
+  if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
+    return 66;
+  }
+
+  return 44;
+};
+
 const static CGFloat MSNPagingNavigationBarTargetShadowOpacity = 0.5f;
 const static CGFloat MSNPagingNavigationBarShadowOpacityAnimationDuration = 0.2f;
 
@@ -66,7 +73,7 @@ const static CGFloat MSNPagingNavigationBarShadowOpacityAnimationDuration = 0.2f
 }
 
 - (void)setupTitleLabel {
-  CGRect frame = CGRectMake(0, 0, CGRectGetWidth(self.bounds) - 120, MSNPagingNavigationBarHeight);
+  CGRect frame = CGRectMake(0, 0, CGRectGetWidth(self.bounds) - 120, MSNPagingNavigationBarHeight());
 
   self.titleLabel = [[UILabel alloc] initWithFrame:frame];
   self.titleLabel.center = self.center;
@@ -81,7 +88,7 @@ const static CGFloat MSNPagingNavigationBarShadowOpacityAnimationDuration = 0.2f
 }
 
 - (void)setupBackButton {
-  CGRect frame = CGRectMake(5, 0, MSNPagingNavigationBarHeight, MSNPagingNavigationBarHeight);
+  CGRect frame = CGRectMake(5, 0, MSNPagingNavigationBarHeight(), MSNPagingNavigationBarHeight());
 
   self.backButton = [[FFPagingNavigationBarBackButton alloc] initWithFrame:frame];
 
@@ -99,7 +106,7 @@ const static CGFloat MSNPagingNavigationBarShadowOpacityAnimationDuration = 0.2f
   @synchronized(self) {
     CGPoint newContentOffset = [change[@"new"] CGPointValue];
 
-    if (newContentOffset.y > - MSNPagingNavigationBarHeight + 5) {
+    if (newContentOffset.y > - MSNPagingNavigationBarHeight() + 5) {
       // shadowOpacity animation
       {
         if (self.layer.shadowOpacity < MSNPagingNavigationBarTargetShadowOpacity) {

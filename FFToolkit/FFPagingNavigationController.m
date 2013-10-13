@@ -30,6 +30,15 @@
 @implementation FFPagingNavigationController
 
 
+inline static CGFloat navigationBarHeight() {
+  if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
+    return 66;
+  }
+
+  return 44;
+}
+
+
 - (instancetype)initWithRootViewController:(FFScrollableViewController *)rootViewController {
   self = [super init];
 
@@ -129,7 +138,7 @@
 }
 
 - (void)____setupNavigationBarForViewController:(FFScrollableViewController *)viewController {
-  CGRect frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), 44);
+  CGRect frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), navigationBarHeight());
 
   FFPagingNavigationBar *navigationBar = [[FFPagingNavigationBar alloc] initWithFrame:frame];
 
@@ -141,7 +150,7 @@
     [viewController.scrollView addObserver:navigationBar forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
   }
 
-  viewController.scrollView.contentInset = UIEdgeInsetsMake(44, 0, 0, 0);
+  viewController.scrollView.contentInset = UIEdgeInsetsMake(navigationBarHeight(), 0, 0, 0);
 
   [viewController.view addSubview:navigationBar];
 }
