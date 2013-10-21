@@ -8,9 +8,6 @@
 
 #import "FFGameCenterManager.h"
 
-// frameworks
-#import <GameKit/GameKit.h>
-
 // FFToolkit
 #import "FFSimpleKeyValueStore.h"
 
@@ -19,6 +16,7 @@
 
 @property (nonatomic) BOOL gameCenterEnabled;
 @property (nonatomic) FFSimpleKeyValueStore *keyValueStore;
+@property (nonatomic, weak) UIViewController *currentViewController;
 
 @end
 
@@ -150,6 +148,47 @@
       NSLog(@"game center achievements reset completed");
     }
   }];
+}
+
+
+# pragma mark
+
+
+- (void)presentGameCenterViewControllerFromViewController:(UIViewController *)viewController {
+  self.currentViewController = viewController;
+
+  GKGameCenterViewController *gameCenterController = [[GKGameCenterViewController alloc] init];
+
+  if (gameCenterController != nil) {
+    gameCenterController.viewState = GKGameCenterViewControllerStateLeaderboards;
+    gameCenterController.leaderboardTimeScope = GKLeaderboardTimeScopeToday;
+    gameCenterController.gameCenterDelegate = self;
+
+    [self.currentViewController presentViewController:gameCenterController animated:YES completion:nil];
+  }
+}
+
+- (void)presentGameCenterSigninViewControllerFromViewController:(UIViewController *)viewController {
+  __weak GKLocalPlayer *localPlayer = [GKLocalPlayer localPlayer];
+
+  localPlayer.authenticateHandler = ^(UIViewController *signinViewController, NSError *error) {
+    if (signinViewController) {
+      [viewController presentViewController:signinViewController animated:YES completion:nil];
+    } else {
+      NSLog(@"failed %@", error.debugDescription);
+    }
+  };
+
+
+}
+
+
+# pragma mark - GKGameCenterControllerDelegate
+
+
+- (void)gameCenterViewControllerDidFinish:(GKGameCenterViewController *)gameCenterViewController {
+  [self.currentViewController dismissViewControllerAnimated:YES completion:nil];
+  self.currentViewController = nil;
 }
 
 

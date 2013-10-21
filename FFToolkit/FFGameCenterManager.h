@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+// frameworks
+#import <GameKit/GameKit.h>
 
-@interface FFGameCenterManager : NSObject
+
+@interface FFGameCenterManager : NSObject <GKGameCenterControllerDelegate>
 
 @property (nonatomic, readonly) BOOL gameCenterEnabled;
 
@@ -22,5 +25,12 @@
 - (void)reportAchievementWithIdentifier:(NSString *)identifier percentComplete:(double)percent;
 
 - (void)resetAchievements;
+
+# pragma mark
+
+- (void)presentGameCenterViewControllerFromViewController:(UIViewController *)viewController;
+
+- (void)presentGameCenterSigninViewControllerFromViewController:(UIViewController *)viewController;
+
 
 @end
